@@ -6,7 +6,7 @@ class Classbasedcomponent extends Component {
     render() {
         return (
             <div>
-                <h3>This is a class based component</h3>
+                <h4>This is a class based component</h4>
             </div>
         )
     }
