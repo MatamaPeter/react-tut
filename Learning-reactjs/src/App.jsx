@@ -4,6 +4,9 @@ import Classbasedcomponent from './components/class-based-components'
 import FunctionalComponent from './components/functional-component'
 import ProductList from './components/products'
 
+const dummyProductData = ['product1', 'product2', 'product3', 'product4', 'product5'];
+
+
 function App() {
 
   return (
@@ -11,7 +14,7 @@ function App() {
       <h1>My First React App</h1>
       <Classbasedcomponent />
       <FunctionalComponent />
-      <ProductList name="Matama" city="Mombasa"/>
+      <ProductList listOfProducts={dummyProductData} name="Matama" city="Mombasa"/>
     </div>
 
   )

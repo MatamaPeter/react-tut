@@ -1,10 +1,11 @@
+import styles from './styles.module.css'
 function Buttoncomponent() {
-    return <button>click</button>
+    return <button className={styles.btnStyle}>click</button>
 }
-function ProductItem() {
+function ProductItem({ singleItem }, key) {
     return (
-        <div className="product-item">
-            <p>Product 1</p>
+        <div key ={key}>
+            <p style={{ fontWeight: "bolder" }}>{singleItem}</p>
             <Buttoncomponent />
             
         </div>
